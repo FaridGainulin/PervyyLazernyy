@@ -1,0 +1,51 @@
+section.calculation-section
+  .wrapper
+    .calculation-section__container
+      .calculation-section__block-agreement
+        .font-w-regular.font-s-20 Скачайте договор,
+        .calculation-section__block-agreement-text.font-s-18
+          | в котором описаны наши обязанности 
+          br
+          | и все условия сотрудничества
+        button.btn.calculation-section__btn(data-remodal-target="modal-form-agreement") Скачать
+      img.calculation-section__icon(src="images/calculation-section-icon.svg" loading="lazy" width="634" height="46" alt="icon")
+      h2.calculation-section__title.font-w-c-regular.font-s-62.text-up
+        | Узнайте, сколько вы будете 
+        br.no-br
+        span.color-red зарабатывать
+      .calculation-section__body
+        .calculation-section__item-1.font-w-regular
+          .font-s-20.color-red 01.
+          .calculation-section__item-1-block
+            .font-s-20 Выберите численность населения вашего города
+            ul.calculation-section__cards.font-s-18
+              li.calculation-section__card.calc-card(data-value="500000") до 500 тысяч жителей
+              li.calculation-section__card.calc-card(data-value="1000000") до 1 млн жителей
+              li.calculation-section__card.calc-card.active-card(data-value="1000001") от 1 млн жителей
+        .calculation-section__item-2.font-w-regular
+          .font-s-20.color-red 02.
+          .calculation-section__item-2-block
+            .font-s-20
+              | Перетащите бегунок и узнайте, какой будет 
+              br.no-br
+              | прибыль в течение двух лет
+            .calculation-section__custom-range
+              .custom-range__track.calculation-section__custom-range-track
+                .custom-range__progress.calculation-section__custom-range-progress
+                .custom-range__thumb.calculation-section__custom-range-thumb
+            .calculation-section__months.font-s-14
+              span 3
+              span 6
+              span 9
+              span 12
+              span 15
+              span 18
+              span 21
+              span 24
+        .calculation-section__item-3.font-w-regular
+          .calculation-section__item-3-block
+            .font-s-20.color-red 03.
+            .font-s-20 Результат
+          .calculation-section__block-result.font-w-semi-bold.font-s-24-a
+            span#result 0
+            span   рублей

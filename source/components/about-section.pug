@@ -1,0 +1,60 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      .about-section__box
+        h2.about-section__title.font-w-o-regular.font-s-48.text-up
+          | Подробнее о концепции 
+          br
+          span.color-violet кондитерской
+        .about-section__sub-title.font-w-medium.font-s-22
+          | Авторская кондитерская 
+          span.font-w-bold.color-violet «ВЕДЬМИНЫ СЕКРЕТЫ» 
+          br.no-br
+          | открылась 
+          span.color-violet в 2019 году 
+          | в г. Кропоткин. Мы готовим 
+          br.no-br
+          | вкусную и полезную диетическую выпечку, 
+          br.no-br
+          | десерты и торты по индивидуальной рецептуре.
+        .about-section__text.font-s-18
+          | Наша продукция пользуется большим спросом у людей, которые 
+          br.no-br
+          | следят за собой и придерживаются здорового образа жизни. 
+          br.no-br
+          | Большую категорию клиентов составляют спортсмены, вегетарианцы 
+          br.no-br
+          | и веганы, диабетики и люди, у которых есть ограничения по питанию 
+          br.no-br
+          | или индивидуальная непереносимость определённых продуктов.
+          br
+          br
+          | Учитывая востребованность диетических десертов, запуск 
+          br.no-br
+          | собственной кондитерской по франшизе — это отличный способ 
+          br.no-br
+          | быстро заполнить нишу и стать лидером рынка в вашем городе.
+      .about-section__bottom
+        .about-section__bottom-feedback
+          .about-section__bottom-title.font-w-semi-bold.font-s-24 Ждем ваши вопросы по франшизе!
+          form.about-section__form(data-feedback-form)
+            textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+            .about-section__form-column
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+              button.btn(type="submit") Задать вопрос
+          .about-section__agree-wrapper
+            include ../components/agree.pug
+        .about-section__bottom-text.font-w-bold.font-s-24
+          | Вы получите не только готовую 
+          br.no-br
+          | модель запуска и продвижения, 
+          br.no-br
+          | но и индивидуальные рецептуры 
+          br.no-br
+          | и технологию производства 
+          br.no-br
+          | полезных и вкусных блюд.
+      img.about-section__img(src="images/about-section-img.png" loading="lazy" width="1144" height="1327" alt="image")
+      img.about-section__icon-arrow(src="images/about-section-icon-arrow.png" loading="lazy" width="110" height="168" alt="icon")

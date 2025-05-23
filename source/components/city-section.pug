@@ -1,0 +1,28 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      .city-section__box
+        h2.city-section__title.font-w-c-light.font-s-62.text-up
+          | Сделайте 
+          span.font-w-c-semi-bold
+            | первый 
+            br.no-br
+            | шаг 
+          | к открытию 
+          br.no-br
+          span.color-red вашей студии
+        .font-s-36 лазерной эпиляции
+        .city-section__line
+        .font-s-20
+          | Проверьте, свободен ли ваш город для 
+          br
+          | работы по франшизе 
+          span.font-w-medium.color-red «Первый Лазерный»
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Проверить
+          .city-section__agree-wrapper
+            include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.jpg" loading="lazy" width="418" height="544" alt="image")

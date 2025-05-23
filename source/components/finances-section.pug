@@ -1,0 +1,54 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__icon(src="images/finances-section-icon.svg" loading="lazy" width="188" height="40" alt="icon")
+      h2.finances-section__title.font-w-c-regular.font-s-62.text-up
+        | Ключевые показатели 
+        br.no-br
+        span.color-red франшизы
+      .font-w-regular.font-s-26 на которые вы можете рассчитывать на старте
+      .finances-section__box
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              .finances-section__card-dot
+              .finances-section__card-text
+                .font-w-medium.font-s-26-a от 3 200 рублей
+                .font-s-18 средний чек одного <br> клиента
+            .finances-section__card.swiper-slide
+              .finances-section__card-dot
+              .finances-section__card-text
+                .font-w-medium.font-s-26-a от 10 услуг
+                .font-s-18 будет оказываться <br> ежедневно
+            .finances-section__card.swiper-slide
+              .finances-section__card-dot
+              .finances-section__card-text
+                .font-w-medium.font-s-26-a с 1-го месяца
+                .font-s-18 вы начнете <br> зарабатывать
+            .finances-section__card.swiper-slide
+              .finances-section__card-dot
+              .finances-section__card-text
+                .font-w-medium.font-s-26-a 673 000 рублей
+                .font-s-18 средняя ежемесячная <br> выручка
+            .finances-section__card.swiper-slide
+              .finances-section__card-dot
+              .finances-section__card-text
+                .font-w-medium.font-s-26-a 46,3%
+                .font-s-18 рентабельность <br> по чистой прибыли
+            .finances-section__card.swiper-slide
+              .finances-section__card-dot
+              .finances-section__card-text
+                .font-w-medium.font-s-26-a 311 000 рублей
+                .font-s-18 средняя ежемесячная <br> чистая прибыль
+          .bullet-pagination
+      .finances-section__bottom
+        .font-w-regular.font-s-20 Узнайте, какие инвестиции потребуются для старта бизнеса
+        .finances-section__bottom-text.font-s-18 Получите финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Получить
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="628" height="935" alt="image")

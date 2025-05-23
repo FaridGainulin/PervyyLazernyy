@@ -1,0 +1,32 @@
+.agree
+  &__container
+    color: #787878
+    display: flex
+    justify-content center
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      justify-content flex-start
+      align-items: flex-start
+      gap: 6px
+    +above($breakpoints.md)
+      gap: 7px
+    +above($breakpoints.xxl)
+      gap: 8px
+
+  &__checkbox
+    width 9px
+    height: 9px
+    +above($breakpoints.sm)
+      width 10px
+      height: 10px
+    +above($breakpoints.md)
+      width 11px
+      height: 11px
+    +above($breakpoints.xxl)
+      width 12px
+      height: 12px
+
+  &__privacy
+    text-decoration: underline
+    cursor pointer

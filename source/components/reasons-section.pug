@@ -1,0 +1,97 @@
+section.reasons-section
+  .wrapper
+    .reasons-section__container
+      img.reasons-section__icon-bg(src="images/reasons-section-icon-bg.svg" loading="lazy" width="1538" height="394" alt="icon")
+      img.reasons-section__icon(src="images/reasons-section-icon.svg" loading="lazy" width="583" height="41" alt="icon")
+      h2.reasons-section__title.font-w-c-regular.font-s-62.text-up
+        | Почему 
+        span.color-red «Первый Лазерный»
+      .reasons-section__box
+        img.reasons-section__img-1(src="images/reasons-section-img-1.jpg" loading="lazy" width="577" height="402" alt="image")
+        img.reasons-section__img-2(src="images/reasons-section-img-2.jpg" loading="lazy" width="344" height="347" alt="image")
+        .swiper-bullet
+          .reasons-section__cards.swiper-wrapper
+            .reasons-section__card.swiper-slide
+              img.reasons-section__card-icon(src="images/reasons-section-card-icon-1.svg" loading="lazy" width="74" height="74" alt="icon")
+              .reasons-section__card-title.font-w-medium.font-s-26-a Актуальность ниши
+              .font-s-18
+                | Ежегодно спрос на услуги 
+                br.no-br
+                | лазерной эпиляции 
+                span.font-w-medium.color-red
+                  | растет на 
+                  br.no-br
+                  | 15-20%, 
+                | что говорит о высокой 
+                br.no-br
+                | востребованности направления 
+                br.no-br
+                | и больших возможностях для 
+                br.no-br
+                | развития бизнеса.
+            .reasons-section__card.swiper-slide
+              img.reasons-section__card-icon(src="images/reasons-section-card-icon-2.svg" loading="lazy" width="74" height="74" alt="icon")
+              .reasons-section__card-title.font-w-medium.font-s-26-a Сильный маркетинг
+              .font-s-18
+                | Мы знаем, кто наши клиенты и их 
+                br.no-br
+                | основные запросы, поэтому 
+                br.no-br
+                | используем только 
+                span.font-w-medium.color-red
+                  | эффективные 
+                  br.no-br
+                  | маркетинговые инструменты, 
+                | с 
+                br.no-br
+                | помощью которых вы легко найдете 
+                br.no-br
+                | своих клиентов в любом городе и 
+                br.no-br
+                | регионе России.
+            .reasons-section__card.reasons-section__card--3.swiper-slide
+              img.reasons-section__card-icon(src="images/reasons-section-card-icon-3.svg" loading="lazy" width="74" height="74" alt="icon")
+              .reasons-section__card-title.reasons-section__card-title--secondary.font-w-medium.font-s-26-a Опытные партнеры
+              .font-s-18
+                | Детально изучили рынок, 
+                br.no-br
+                | проанализировали целевую 
+                br.no-br
+                | аудиторию, разобрались во 
+                br.no-br
+                | всех нюансах ведения бизнеса 
+                br.no-br
+                | и с радостью 
+                span.font-w-medium.color-red
+                  | передадим наш 
+                  br.no-br
+                  | опыт и знания вам.
+            .reasons-section__card.swiper-slide
+              img.reasons-section__card-icon(src="images/reasons-section-card-icon-4.svg" loading="lazy" width="74" height="74" alt="icon")
+              .reasons-section__card-title.reasons-section__card-title--secondary.font-w-medium.font-s-26-a Легкий старт
+              .font-s-18
+                | Вместе с нами вы запустите все 
+                br.no-br
+                | процессы студии 
+                span.font-w-medium.color-red
+                  | всего за 35 
+                  br.no-br
+                  | дней 
+                | и будете действовать при 
+                br.no-br
+                | нашей постоянной поддержке, 
+                br.no-br
+                | быстро масштабируя и умножая 
+                br.no-br
+                | ваши финансовые результаты.
+          .bullet-pagination
+      .reasons-section__bottom
+        .font-w-regular.font-s-20 Хотите узнать о нас больше?
+        .reasons-section__bottom-text.font-s-18 Получите подробную презентацию франшизы
+        form.reasons-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input.input--grey-border(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.input--grey-border(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Получить
+        .reasons-section__agree-wrapper
+          include ../components/agree.pug

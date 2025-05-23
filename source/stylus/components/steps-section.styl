@@ -1,0 +1,109 @@
+.steps-section
+  background-image: url('../images/steps-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #866A53
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    padding 20px 0 80px
+    +above($breakpoints.sm)
+      padding 60px 0 150px
+    +above($breakpoints.md)
+      padding 90px 0 200px
+    +above($breakpoints.xxl)
+      padding 121px 0 253px
+
+  &__icon
+    width 182px
+    height: 18px
+    margin 0 auto
+    +above($breakpoints.sm)
+      width 271px
+      height: 27px
+    +above($breakpoints.md)
+      width 337px
+      height: 34px
+    +above($breakpoints.xxl)
+      width 420px
+      height: 42px
+
+  &__icon-bg
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      z-index -1
+      left: 50%
+      transform: translateX(-50%)
+      width: 658px;
+      height: 219px
+      top: 332px;
+    +above($breakpoints.md)
+      width: 855px;
+      height: 285px
+      top: 454px;
+    +above($breakpoints.xxl)
+      width 1000px
+      height: 333px
+      top: 559px
+
+  &__title,
+  &__sub-title
+    color: $color-white
+
+  &__title
+    padding 6px 0 15px
+    +above($breakpoints.sm)
+      padding 10px 0 15px
+    +above($breakpoints.md)
+      padding 15px 0 18px
+    +above($breakpoints.xxl)
+      padding 17px 0 20px
+
+  &__sub-title
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 60px
+    +above($breakpoints.xxl)
+      padding-bottom 80px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      justify-content center
+      gap: 60px 40px
+    +above($breakpoints.md)
+      gap: 80px 60px
+    +above($breakpoints.xxl)
+      gap: 105px 80px
+
+  &__card
+    width 190px !important
+    height: 190px
+    border-radius: 50%
+    background-color #F0EBE4
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    padding-top 45px
+    +above($breakpoints.sm)
+      width: 130px !important;
+      height: 130px
+    +above($breakpoints.md)
+      width: 160px !important;
+      height: 160px
+      gap: 18px;
+      padding-top 35px
+    +above($breakpoints.xxl)
+      width 180px !important
+      height: 180px
+      gap: 20px
+      padding-top 41px

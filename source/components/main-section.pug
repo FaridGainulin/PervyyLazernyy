@@ -1,0 +1,26 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-c-light.font-s-62.text-up
+        | Зарабатывайте 
+        br.no-br
+        span.font-w-c-semi-bold.color-red от 311 000 рублей 
+        br.no-br
+        | ежемесячно
+      .font-s-36 на услугах лазерной эпиляции
+      .main-section__line
+      .font-s-20
+        | Узнайте, как запустить студию 
+        br.no-br
+        | «Первый Лазерный» всего 
+        span.font-w-medium за 35 дней
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Получите подробный <br> план открытия
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.jpg" loading="lazy" width="429" height="600" alt="image")
+      img.main-section__icon(src="images/main-section-icon.svg" loading="lazy" width="475" height="68" alt="icon")
