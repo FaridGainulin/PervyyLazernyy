@@ -88,10 +88,11 @@ section.reasons-section
       .reasons-section__bottom
         .font-w-regular.font-s-20 Хотите узнать о нас больше?
         .reasons-section__bottom-text.font-s-18 Получите подробную презентацию франшизы
-        form.reasons-section__form(data-feedback-form)
-          input(type="text" name="honeyfield" class="honeypot" style="display:none")
-          input.input.input--grey-border(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
-          input.input.input--grey-border(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
-          button.btn(type="submit") Получить
-        .reasons-section__agree-wrapper
-          include ../components/agree.pug
+        form(data-feedback-form)
+          .reasons-section__form
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input.input--grey-border(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input.input--grey-border(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn(type="submit") Получить
+          .reasons-section__agree-wrapper
+            include ../components/agree.pug

@@ -1,6 +1,7 @@
 .agree
-  .agree__container
-    img.agree__checkbox(src="images/checkbox.svg" loading="lazy" width="12" height="12" alt="checkbox")
-    .font-s-10
+  label.agree__container
+    input(type="checkbox" name="agree" class="agree__input")
+    span.agree__icon
+    .font-s-10.agree__text
       | Я принимаю условия 
       a(href="#" data-remodal-target="privacy").agree__privacy Политики конфиденциальности

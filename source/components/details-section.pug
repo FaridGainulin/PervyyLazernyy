@@ -29,11 +29,12 @@ section.details-section
         img.details-section__bottom-img(src="images/details-section-bottom-img.png" loading="lazy" width="184" height="184" alt="image")
         .details-section__bottom-block
           .font-s-18 Запишитесь на онлайн-встречу
-          form.details-section__form(data-feedback-form)
-            input(type="text" name="honeyfield" class="honeypot" style="display:none")
-            input.input.input--grey-border(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
-            input.input.input--grey-border(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
-            button.btn(type="submit") Оставить заявку
-          .details-section__agree-wrapper
-            include ../components/agree.pug
+          form(data-feedback-form)
+            .details-section__form
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input.input--grey-border(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+              input.input.input--grey-border(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+              button.btn(type="submit") Оставить заявку
+            .details-section__agree-wrapper
+              include ../components/agree.pug
       img.details-section__img(src="images/details-section-img.jpg" loading="lazy" width="437" height="333" alt="image")

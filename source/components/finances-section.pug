@@ -44,11 +44,12 @@ section.finances-section
       .finances-section__bottom
         .font-w-regular.font-s-20 Узнайте, какие инвестиции потребуются для старта бизнеса
         .finances-section__bottom-text.font-s-18 Получите финансовую модель франшизы
-        form.finances-section__form(data-feedback-form)
-          input(type="text" name="honeyfield" class="honeypot" style="display:none")
-          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
-          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
-          button.btn(type="submit") Получить
-        .finances-section__agree-wrapper
-          include ../components/agree.pug
+        form(data-feedback-form)
+          .finances-section__form
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn(type="submit") Получить
+          .finances-section__agree-wrapper
+            include ../components/agree.pug
       img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="628" height="935" alt="image")

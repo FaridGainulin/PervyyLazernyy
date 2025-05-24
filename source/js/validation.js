@@ -44,6 +44,9 @@ $('form').each(function () {
         required: true,
         phone: true,
       },
+      agree: {
+        required: true,
+      }
     },
   });
 });
